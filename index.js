@@ -57,7 +57,6 @@ function countBlanksQuestionScore() {
     }
     if (answer[3].value === "继承性") {
         blankAnswer += 5;
-
     }
 
     return blankAnswer;
@@ -81,7 +80,6 @@ function countChoiceQuestionScore() {
 }
 
 
-
 function countMultipleChoiceQuestionScore() {
 
     var multipleChoiceAnwser = 0;
@@ -103,7 +101,7 @@ function countTrueOrFalseQuestionScore() {
     var trueOrFalseAnswer = 0;
     var answer = document.getElementsByName("判断");
 
-    if (answer[0].value === "正确") {
+    if (answer[0].value === "错误") {
         trueOrFalseAnswer += 10;
     }
     if (answer[1].value === "正确") {
@@ -114,7 +112,6 @@ function countTrueOrFalseQuestionScore() {
 }
 
 
-
 function countShortAnswerQuestionScore() {
 
     var shortAnswerAnswer = 0;
@@ -122,7 +119,6 @@ function countShortAnswerQuestionScore() {
 
     if (answer.value === "模型是对现实世界的简化和抽象,模型是对所研究的系统、过程、事物或概念的一种表达形" +
         "式。可以是物理实体;可以是某种图形;或者是一种数学表达式") {
-
         shortAnswerAnswer += 10;
     }
 
